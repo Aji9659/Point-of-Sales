@@ -1,0 +1,159 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Form Styles */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    max-width: 500px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Navigation Styles */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.nav-links a {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #2980b9;
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Login Page Specific */
+.login {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+}
+
+/* Print Page Specific */
+@media print {
+    body {
+        padding: 0;
+        background: white;
+    }
+    
+    a {
+        display: none;
+    }
+    
+    button {
+        display: none;
+    }
+}
